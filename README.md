@@ -1,7 +1,7 @@
 # Floral-Laurel
 eCommerce project
 
-This is a mock website I built from scratch in Visual Studio Code for my e-commerce/eCommerce class (CIS235) at Rio Salado College in November 2025. It advertises products for a (fake) flower shop.
+This is a mock website I built from scratch in Visual Studio Code for my e-commerce/eCommerce class (CIS235) at Rio Salado College in November 2025. It advertises products for a (fake) flower shop, complete with a honeypot decoy system file to detect and deflect cyberattacks.
 Please feel free to click around and explore! This site is also mobile-compatible.
 
 I utilized HTML, CSS, and JavaScript to create a visually-intriguing website complete with example product images, pricing, interactive buttons, and cart/checkout areas. 
@@ -13,4 +13,4 @@ Snipcart uses both HTML and Javascript to create a built-in e-commerce platform 
 I also made use of the platform's features to code live price updates in one's cart when purchasing multiple items. Some products feature different dropdown/radio/checkbox options when viewing the cart, as well.
 
 For Floral & Laurel, I researched typical market prices for the listed floral products, keeping in mind the store's foundation in sustainability and how similar establishments advertised their products.
-This project provides just a small highlight of my knowledge of user-friendly navigation, dynamic checkout processes, building customer trust, varied product assortments, and focus on the target market/ICP.
+This project provides just a small highlight of my knowledge of user-friendly navigation, dynamic checkout processes, building customer trust, varied product assortments, cybersecurity, and focus on the target market/ICP.
