@@ -1,0 +1,609 @@
+body {
+font-family: 'Verdana', serif;
+background-color: #f9fff0;
+color: black;
+}
+.header1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+padding: 10px 30px;
+flex-wrap: wrap;
+color: white;
+border-radius: 20px;
+float: left;
+border-style: solid;
+border-color: #2c4631;
+font-weight: bold;
+}
+.header2 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #362079;
+padding: 10px 30px;
+flex-wrap: wrap;
+color: white;
+border: 2px solid black;
+border-radius: 20px;
+float: right;
+position: relative;
+font-family: 'copperplate gothic light', sans-serif;
+letter-spacing: 1px;
+}
+.logo {
+display: flex;
+align-items: center;
+font-family: "copperplate gothic light", cursive;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+header nav a:hover {
+    background-color: #eb87ff;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 20px;
+
+}
+.nav2 a:hover {
+    background-color: #7e1c4d;
+    border-radius: 20px;
+    padding: 10px 0px;
+    color: white;
+}
+.nav1 a {
+    padding: 0 10px;
+}
+nav a {
+margin: 0 20px;
+text-decoration: none;
+color: rgb(245, 247, 255);
+font-weight: bold;
+}
+
+/* above styling keep same for all pages  */
+
+main {
+    padding: 40px 20px;
+    text-align: left;
+}
+h1 {
+font-family: "copperplate gothic light", cursive;
+font-size: 3rem;
+margin-bottom: 10px;
+padding-top: 100px;
+padding-bottom: 25px;
+color: #2c4631;
+}
+aside {
+    float: right;
+    padding: 40px;
+    width: 60%;
+}
+/*above moves aside box*/
+.aside {
+    float: right;
+    width: 30%;
+}
+/*above moves both img and aside(project 2 notes)*/
+@media (max-width: 500px) {
+  .aside {
+    float: none; /* stops float */
+    width: 100%;
+    margin: 10px 0;
+  }
+  .featured {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    font-size: smaller;
+  }
+}
+/* above makes aside and featured adjust for smaller screens (aside was covering body, .featured text overfilled) */
+ul {
+    font-size: smaller;
+}
+/* aside {
+    float: right;
+    background-color: #e7dfff;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 200px;
+    width: 30%;
+    border-style: solid;
+    border-color: #2c4631;
+}
+    original aside css for reference */
+.featured {
+background-color: #ffc9ec;
+padding: 15px;
+width: 26%;
+border-radius: 20px;
+font-weight: bold;
+color: #7e1c4d;
+border-style: solid;
+border-color: #7e1c4d;
+}
+.article2 {
+    width: 60%
+}
+
+.about2 {
+    padding-bottom: 10px;
+}
+.flower-section img {
+    width: 7.6%;
+    float: left;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-color: #56409a;
+    border-bottom-color: black;
+    border-style: solid;
+    border-bottom-width: .9px
+}
+/*flower img wraps like a tab*/
+.about3 {
+    padding: 5px;
+    font-style: italic;
+    font-size: smaller;
+    background-color: #56409a;
+    color: white;
+    border-style: solid;
+    border-color: #3b2c69;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    color: red;
+    font-family: "Copperplate gothic light", cursive;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #7e1c4d;
+}
+/*flash sale title above*/
+.copyright {
+    float: right;
+    font-size: smaller;
+    color: #7e1c4d;
+}
+.address {
+    background-color: #f5ffe7;
+    padding: 10px;
+    color: #56409a;
+    font-size: smaller;
+}
+.home-link {
+    text-decoration: none;
+    color: inherit;
+    /*keeps white text and removes underline*/
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 2em;
+    border-radius: 20px;
+}
+.banner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.arrangements {
+    display: grid;
+    margin: 80px;
+    background-color: #617164;
+    border-radius: 20px;
+    width: 50%;
+    font-family: 'Verdana', serif;
+}
+.arrangements img {
+    border-radius: 20px;
+}
+.arrangements button {
+    color: #56409a;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+.arrangements section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(255, 222, 237);
+    border-radius: 20px;
+}
+.arrangements p {
+    font-size: 14px;
+    color: white;
+}
+.arrangements details {
+    margin: 20px;
+    background-color: #7e1c4d;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+}
+.arrangements details ul {
+    padding: 20px 40px;
+    background-color: #f5ffe7;
+
+    border-radius: 20px;
+}
+.arrangements li {
+    font-style: italic;
+}
+.arrangements summary {
+    color: white;
+}
+.arrangements details[open] summary {
+    color: black;
+}
+/*above makes summary text black when opened for easier reading (same text color was jarring to me)*/
+
+.cards {
+    display: grid;
+    margin: 80px;
+    background-color: #320d80;
+    border-radius: 20px;
+    width: 50%;
+    font-family: 'Verdana', serif;
+}
+.cards img {
+    border-radius: 20px;
+}
+.cards button {
+    color: #fff7c5;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(255, 81, 0);
+    border: 2px solid rgb(152, 23, 0);
+}
+.cards section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(223, 220, 255);
+    border-radius: 20px;
+}
+.cards p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+.cards details {
+    margin: 20px;
+    background-color: #ffdb79;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(212, 143, 4);
+    border-radius: 20px;
+}
+.cards details ul {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.cards li {
+    font-style: italic;
+}
+.cards summary {
+    color: rgb(35, 12, 71);
+}
+.cards details[open] summary {
+    color: rgb(190, 117, 34);
+}
+
+.vases {
+    display: grid;
+    margin: 80px;
+    background-color: #ff8a23;
+    border-radius: 20px;
+    width: 50%;
+    font-family: 'Verdana', serif;
+}
+.vases img {
+    border-radius: 20px;
+}
+.vases button {
+    color: #1f1f1f;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(231, 233, 255);
+    border: 2px solid rgb(9, 0, 139);
+}
+.vases section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(255, 224, 157);
+    border-radius: 20px;
+}
+.vases p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+.vases details {
+    margin: 20px;
+    background-color: #5582ff;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(0, 25, 107);
+    border-radius: 20px;
+}
+.vases details ul {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.vases li {
+    font-style: italic;
+}
+.vases summary {
+    color: rgb(248, 244, 255);
+}
+.vases details[open] summary {
+    color: rgb(16, 0, 189);
+}
+
+.stuffies {
+    display: grid;
+    margin: 80px;
+    background-color: #037a85;
+    border-radius: 20px;
+    width: 50%;
+    font-family: 'Verdana', serif;
+}
+.stuffies img {
+    border-radius: 20px;
+}
+.stuffies button {
+    color: #f8f8f8;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(62, 0, 53);
+    border: 2px solid rgb(45, 45, 45);
+}
+.stuffies section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(235, 255, 243);
+    border-radius: 20px;
+}
+.stuffies p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+.stuffies details {
+    margin: 20px;
+    background-color: #ffad92;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(107, 0, 104);
+    border-radius: 20px;
+}
+.stuffies details ul {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.stuffies li {
+    font-style: italic;
+}
+.stuffies summary {
+    color: rgb(52, 33, 0);
+}
+.stuffies details[open] summary {
+    color: rgb(189, 72, 0);
+}
+
+.specialties {
+    display: grid;
+    margin: 80px;
+    background-color: #282828;
+    border-radius: 20px;
+    width: 50%;
+    font-family: 'Verdana', serif;
+}
+.specialties img {
+    border-radius: 20px;
+}
+.specialties button {
+    color: #161616;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(250, 206, 63);
+    border: 2px solid rgb(45, 45, 45);
+}
+.specialties section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+.specialties p {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+.specialties details {
+    margin: 20px;
+    background-color: #7d7d7d;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(233, 171, 36);
+    border-radius: 20px;
+}
+.specialties details ul {
+    padding: 20px 40px;
+    background-color: #fffdec;
+    border-radius: 20px;
+}
+.specialties li {
+    font-style: italic;
+}
+.specialties summary {
+    color: rgb(251, 251, 251);
+}
+.specialties details[open] summary {
+    color: rgb(52, 52, 52);
+}
+
+
+/*nav1 is header, .nav2 footer */
+@media (max-width: 700px) {
+    .nav1, .nav2 {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav1 a, .nav2 a {
+        display: block;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+    }
+    .nav1 a:hover {
+        padding: 10px 20px; /*adjustment for 'Arrangements' hover*/
+    }
+    .header1, .header2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        float: none;
+    }
+    .header1 {
+        display: block;
+    } /*step 6*/
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        width: 80px;
+        margin-right: 0; /*center*/
+    }
+    .aside img {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        margin: 10px auto;
+    }
+    .about1, .about2 {
+        width: 180%;
+        text-align: left;
+        align-content: center;
+        float: none;
+    }
+    .banner {
+        height: 100%;
+        padding: 10px;
+    }
+    .banner-text {
+        text-align: left;
+        margin: 0;
+        padding-top: 20px;
+        border-radius: 50%;
+        /*made oval for easier readability*/
+    }
+    .banner-text h2 {
+        font-size: 80%;
+        width: 100%;
+    }
+    .banner-text p {
+        font-size: 60%;
+    }
+    .featured {
+        width: 80%;
+    }
+    .flower-section {
+        width: 150%;
+    }
+    .flower-section img {
+        width: 20%;
+    }
+
+    /*Arrangements below*/
+    .arrangements {
+        width: 100%;
+        margin-left: -10px;
+        align-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .arrangements section {
+        width: 70%;
+        font-size: 60%;
+        text-align: left;
+    }
+    .arrangements img {
+        width: 80%;
+    }
+    .arrangements p {
+        font-size: 100%;
+    }
+    .arrangements details {
+        width: 80%;
+        padding: 10px;
+        margin: 5px;
+    }
+    .arrangements button {
+        width: 50%;
+        font-size: 100%;
+    }
+}
+
+.snipcart-checkout {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    font-weight: bold;
+}
+.snipcart-checkout:hover {
+    background-color: #eb87ff;
+    color: black;
+    cursor: pointer;
+}

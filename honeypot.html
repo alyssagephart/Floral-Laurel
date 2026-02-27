@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F&L Template</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    form {
+        background-color: rgb(245, 233, 255);
+        width: 800px;
+        padding: 20px;
+        border: 2px solid rgb(70, 1, 87);
+        border-radius: 20px;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: rgb(61, 19, 128);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid #282828;
+        border-radius: 20px;
+    }
+    .honeypotP {
+        display: none;
+    } 
+    @media (max-width: 600px) {
+        form {
+            width: 130%;
+
+        }
+        .article2 h2 {
+            width: 180%;
+        }
+        #reason {
+            width: 98%;
+            max-width: 300px;
+        }
+        h1 {
+            margin-top: -100px;
+        }
+    }
+</style>
+</head>
+
+<body>
+<header class="header1">
+    <a href="index.html" class="home-link">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="elegant flower composition logo">
+        <!-- freepik. (n.d.-b). Elegant flower composition. freepik.com. Retrieved from https://www.freepik.com/free-photo/elegant-flower-composition_1439604.htm. 
+         -b = 2nd alpha from same source author freepik -->
+        <h2>F & L</h2>
+    </div></a>
+</header>
+<header class="header2">
+    <nav class="nav1">
+        <a href="arrangements.html">Arrangements</a>
+        <a href="cards.html">Cards</a>
+        <a href="vases.html">Vases</a>
+        <a href="stuffies.html">Stuffies</a>
+        <a href="specialties.html">Specialties</a>
+    </nav>
+</header>
+
+<main>
+    <article class="article2"> <!-- L7 note: change class later if needed -->
+        <h1>Product Returns</h1>
+        <h2><em><small>If you would like to return one of our products, please fill this form completely and select the Submit button below when finished.</small></em></h2>
+    <form action="return.php" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="order-number">Order Number:</label><br>
+        <input type="text" id="order-number" name="order-number" required><br><br>
+
+        <p class="honeypotP">
+            <label for="honeypot">Phone Number:</label>
+            <input type="text" id="honeypot" name="honeypot" class="honeypot"><br>
+        </p>
+
+        <label for="reason">Please describe which products you'd like to return/exchange and why:</label><br>
+        <textarea id="reason" name="reason" rows="5" cols="50" required></textarea><br>
+
+        <h2><em><small>Return Type:</small></em></h2>
+        <input type="radio" id="return" name="return-type" value="return" required>
+        <label for="return">Return</label><br>
+        <input type="radio" id="exchange" name="return-type" value="exchange" required>
+        <label for="exchange">Exchange</label><br>
+        <input type="radio" id="credit" name="return-type" value="credit" required>
+        <label for="credit">Store Credit</label><br><br>
+        <!--same name allows only one choice-->
+
+        <input type="checkbox" id="policy" name="policy" required>
+        <label for="policy"> - Subscribe to our newsletter for a 20% off coupon!</label><br><br>
+
+        <div><input type="submit" value="Submit"> <input type="reset" value="Reset"></div>
+    </form>
+    </article>
+</main>
+<footer>
+<nav class="nav2">
+    <a href="#">Contact Us</a>
+    <a href="#">Location</a>
+    <a href="#">Socials</a>
+    <a href="#">Our Story</a>
+</nav><br>
+<address class="address">
+    Floral & Laurel <strong>•</strong> 123 Flower St, Bloomington, AZ 12345 <strong>•</strong> (123) 456-7890</address><br>
+</footer>
+<p class="copyright"><a href="mailto:aly2120748@riosalado.edu">aly2120748@riosalado.edu</a> &copy; 2025 Alyssa Gephart</p>
+</body>
+</html>
